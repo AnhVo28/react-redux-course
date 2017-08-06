@@ -62,20 +62,3 @@ export default class Scoreboard extends Component{
     );
   }
 };
-
-// Move to components/Header.js
-// ----------------------------------------------
-
-// Move to components/Stats.js
-// -----------------------------------------------------------------------
-
-
-// Move to components/Stopwatch.js
-// ------------------------------------------------------------------------
-
-
-// Move to components/Player.js
-// ----------------------------------------------------------------------
-
-// Move to components/Counter.js
-// ----------------------------------------------------------

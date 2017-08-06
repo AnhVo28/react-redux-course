@@ -24,7 +24,7 @@ const Stats= (props) =>{
 }
 
 Stats.propTypes = {
-  players:PropTypes.array.isRequired,
+  players: PropTypes.array.isRequired,
 };
 
 
