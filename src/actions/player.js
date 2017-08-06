@@ -3,7 +3,7 @@ import * as PlayerActionTypes from '../actiontypes/player';
 export const addPlayer = name =>{
   return {
     type: PlayerActionTypes.ADD_PLAYER,
-    name:
+    name
   }
 }
 
