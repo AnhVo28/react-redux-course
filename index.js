@@ -6,7 +6,8 @@ import { createStore } from 'redux'
 import PlayerReducer from './src/reducers/player';
 
 const store = createStore(
-  PlayerReducer
+  PlayerReducer,
+  window.devToolsExtension && window.devToolsExtension()
 );
 
 render(
