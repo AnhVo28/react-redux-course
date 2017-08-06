@@ -15,7 +15,7 @@ class Scoreboard extends Component{
 
   render() {
 
-    const {dispatch, player} = this.props;
+    const {dispatch, players} = this.props;
     const addPlayer = bindActionCreators(PlayerActionCreator.addPlayer, dispatch)
     const removePlayer = bindActionCreators(PlayerActionCreator.removePlayer, dispatch)
     const updatePlayerScore = bindActionCreators(PlayerActionCreator.updatePlayerScore, dispatch)
@@ -29,8 +29,6 @@ class Scoreboard extends Component{
         removePlayer ={removePlayer}
         updatePlayerScore = {updatePlayerScore}
         />
-
-
     ))
     return (
       <div className="scoreboard">
@@ -38,7 +36,7 @@ class Scoreboard extends Component{
         <div className="players">
           { playerComponents }
         </div>
-        <AddPlayerForm onAdd={this.onAddPlayer} />
+        <AddPlayerForm addPlayer={addPlayer} />
       </div>
     );
   }
